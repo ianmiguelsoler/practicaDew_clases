@@ -1,6 +1,7 @@
 <?php
 
 namespace Class;
+include_once "Enum/TipoUsuario.php";
 use Class\Enum\TipoUsuario;
 use DateTime;
 
@@ -14,11 +15,11 @@ class Usuario
     private string $nombre;
     private string $apellidos;
     private string $direccion;
-    private array $telefonos;
-    private array $reservas;
+    public array $telefonos;
+    public array $reservas;
     private float $calificacion;
     private string $tarjetaPago;
-    private array $datosAdicionales;
+    public array $datosAdicionales;
     private TipoUsuario $tipo;
 
     //Métodos de la clase Usuario
